@@ -1,5 +1,9 @@
 Interfaces:
 টাইপস্ক্রিপ্টে Interfaces একটি object এর property এর মান বা function এর data এর ধরন declare করতে ব্যবহৃত হয়। অর্থাৎ একটি object মধ্যে থাকা property value বা function এর data type এর ধরন বা type নির্ধারণ করতে interfaces ব্যবহার হয়।
 
-Types: 
+Types:
 TypesScript-এ types হলো ডেটার type বা structure নির্ধারণ করার একটি আরও অধিকতর ব্যাপক একটি উপায়। Types ও interfaces এর মত ডেটার type ঘোষণা করতেও ব্যবহৃত হয়, তবে এর ব্যবহারক্ষেত্র interfaces-এর তুলনায় আরও বিস্তৃত।
+
+Types এবং Interfaces ইন্টারফেসের মধ্যে পার্থক্য:
+
+1. Type Interface চেয়ে বেশি নমনীয়। Types objects, unions, primitives, tuples, intersections এবং আরও অনেক ক্ষ্রেত্রে ব্যবহার করা যায়। অন্যদিকে ইন্টারফেসের ব্যবহারক্ষেত্র শুধুমাত্র object বা class আকৃতি বর্ণনাতেই সীমিত।
