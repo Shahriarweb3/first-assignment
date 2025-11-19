@@ -46,7 +46,7 @@ class Person {
     
 }
 
-interface eachBook {
+type eachBook = {
   title: string;
   rating: number;
 }
@@ -71,20 +71,20 @@ function filterActiveUsers(users: user[]): user[] {
 filterActiveUsers([]);
 
 
-
 interface Book {
-  title: string;
-  author: string;
-  publishedYear: number;
-  isAvailable: boolean;
+    title: string;
+    author: string;
+    publishedYear: number;
+    isAvailable: boolean;
+
 }
+function printBookDetails(bookDetails: Book): void{
+     const availability = bookDetails.isAvailable ? "Yes" : "No";
+     console.log(
+        `Title: ${bookDetails.title}, Author: ${bookDetails.author}, Published: ${bookDetails.publishedYear}, Available: ${availability}`
 
-
-function printBookDetails(book: Book): void {
-  const availability = book.isAvailable ? "Yes" : "No";
-  console.log(
-    `Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${availability}`
-  );
+     );
+     
 }
 
 
@@ -96,7 +96,7 @@ const myBook: Book = {
 };
 
 
-printBookDetails(myBook);
+console.log(printBookDetails(myBook));
 
 
 function getUniqueValues(arr1: (string | number)[], arr2: (string | number)[]): (string | number)[] {
