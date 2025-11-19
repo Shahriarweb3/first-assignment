@@ -105,29 +105,21 @@ function getUniqueValues(arr1: (string | number) [], arr2: (string | number) [])
     
 }
 
-interface Product {
-  name: string;
-  price: number;
-  quantity: number;
-  discount?: number; 
+interface product {
+    name: string;
+    price: number;
+    quantity: number;
+    discount?: number;
 }
 
-function calculateTotalPrice(products: Product[]): number {
-  return products.reduce((total, product) => {
-    let price = product.price * product.quantity;
-
-    if (product.discount !== undefined) {
-      price -= (price * product.discount) / 100;
-    }
-
-    return total + price;
-  }, 0);
+function calculateTotalPrice (products: product[]): number{
+    
+    return products.reduce((total, product) => {
+        let price = product.price * product.quantity;
+        if (product.discount !== undefined){
+            price -= (price * product.discount) / 100;
+        }
+        return total + price;
+    }, 0);
 }
-
-const products: Product[] = [
-  { name: 'Pen', price: 10, quantity: 2 },
-  { name: 'Notebook', price: 25, quantity: 3, discount: 10 },
-  { name: 'Bag', price: 50, quantity: 1, discount: 20 },
-];
-
-console.log(calculateTotalPrice(products)); 
+ 
