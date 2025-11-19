@@ -55,35 +55,20 @@ function filterByRating(books: eachBook[]): eachBook[] {
   return books.filter(book => book.rating >= 4);
 }
 
-const books: eachBook[] = [
-  { title: "Book A", rating: 4.5 },
-  { title: "Book B", rating: 3.2 },
-  { title: "Book C", rating: 5.0 },
-];
 
-console.log(filterByRating(books));
-
-type User = {
+type user = {
   id: number;
   name: string;
   email: string;
   isActive: boolean;
 };
 
-
-function filterActiveUsers(users: User[]): User[] {
+function filterActiveUsers(users: user[]): user[] {
   
   return users.filter(user => user.isActive === true);
 }
 
-const users: User[] = [
-  { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
-  { id: 2, name: 'Asha', email: 'asha@example.com', isActive: false },
-  { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
-];
-
-
-filterActiveUsers(users);
+filterActiveUsers([]);
 
 
 
