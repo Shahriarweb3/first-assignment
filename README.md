@@ -10,3 +10,12 @@ Types এবং Interfaces ইন্টারফেসের মধ্যে প
 2. Types এ একই name দিয়ে বার বার declare করা যায় না, error দেখাবে
 
 Interface: একই name দিয়ে বার বার declare করা যায়; TypeScript এগুলোকে automatically merge করে দেয়।
+
+
+Any:
+
+যেকোনো মান রাখতে পারে—string, number, object ইত্যাদি।
+
+TypeScript এর usage যাচাই করে না, তাই এর উপর যেকোনো property বা method ব্যবহার করা যায়।
+
+Unsafe, কারণ এটি type checking এড়িয়ে চলে।
