@@ -19,3 +19,9 @@ Any:
 TypeScript এর usage যাচাই করে না, তাই এর উপর যেকোনো property বা method ব্যবহার করা যায়।
 
 Unsafe, কারণ এটি type checking এড়িয়ে চলে।
+
+unknown
+
+এটিও যেকোনো মান রাখতে পারে, কিন্তু ব্যবহার করার আগে type checking বাধ্যতামূলক।
+
+any-এর চেয়ে নিরাপদ, কারণ আগে type নির্ধারণ (narrow) করতে হয়।
